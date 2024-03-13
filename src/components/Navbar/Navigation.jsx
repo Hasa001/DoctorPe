@@ -20,10 +20,13 @@ export const Navigation = () => {
                     <div>DoctorPe</div>
                 </div>
                 </Link>
+
+                <Link to="/searchDoctor">
                 <div className="div-nav-middle-item">
                     <div>Find Doctors</div>
                     <div>Book an appointment</div>
                 </div>
+                </Link>
                 <Link to="/searchDoctor">
                 <div className="div-nav-middle-item">
                     <div>Video Consult</div>
@@ -36,7 +39,7 @@ export const Navigation = () => {
                         <div>Practo Pharmacy</div>
                     </div>
                 </Link>
-                <Link to="/doctors">
+                <Link to="/Ai_Lab">
                     <div className="div-nav-middle-item">
                         <div>Lab Tests</div>
                         <div>Book tests & checkup</div>
