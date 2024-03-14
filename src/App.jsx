@@ -7,6 +7,7 @@ import { SearchDoctor } from "./pages/searchDoctor/SearchDoctor"
 import { VideoCall } from "./components/VideoCall/VideoCall"
 import Medicine from "./pages/Medicine/Medicine"
 import AiLab from "./pages/AiLab/AiLab"
+import ProductsScreen from './screens/ProductsScreen';
 function App() {
 
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/searchDoctor" element={<SearchDoctor />} />
           <Route path="/consult" element={<VideoCall />} />
-          <Route path="/medicines"element={<Medicine/>}/>
+          <Route path="/medicines"element={<ProductsScreen />}/>
           <Route path="/AI_Lab"element={<AiLab/>}/>
         </Routes>
       </BrowserRouter>
