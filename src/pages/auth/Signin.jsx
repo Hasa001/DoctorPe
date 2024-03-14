@@ -17,8 +17,8 @@ function Signin() {
 
   return (
     <div className='flex justify-center  h-full'>
-        <div className='flex  justify-center p-10'>
-          <div className='bg-white rounded-lg  mt-10 w-3/4 h-max p-8 px-8'>
+        <div className='flex  justify-center'>
+          <div className='bg-white rounded-lg  w-3/4 h-max p-8 px-8'>
             <Logo/>
           <Heading label={"Sign In"} />
           <SubHeading text={"Enter your information to sign-in"} />
