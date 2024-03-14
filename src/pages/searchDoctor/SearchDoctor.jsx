@@ -22,7 +22,7 @@ export const SearchDoctor = () => {
         navigate("/consult")
     }
 
-    return <div className="bg-slate-100 h-100 mb-8">
+    return <div className="bg-gray-100  w-full h-full  p-10">
         <div className="">
             
             {/* flex justify-around */}
@@ -42,7 +42,7 @@ export const SearchDoctor = () => {
             </div>
         </div>
 
-        <div className="grid grid-cols-4 p-7">
+        <div className="grid grid-cols-5 p-2">
         
             
         {users.map(user => (

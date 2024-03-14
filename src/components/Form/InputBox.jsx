@@ -1,9 +1,7 @@
 
-export const InputBox = ({ label, placeholder, onChange}) => {
-    return <div className="">
-        <div className="text-sm font-medium text-left p-2 -ml-2">
-            {label}
-        </div>
-        <input placeholder={placeholder} onChange={onChange} className="w-full px-2 py-1 border rounded border-slate-200"/>
-    </div>
+export const InputBox = ({ label,type,name,id, placeholder, onChange,clas,value}) => {
+    return <div className="md:col-span-5">
+    <label htmlFor={name}>{label}</label>
+    <input type={type} name={name} id={id} placeholder={placeholder} onChange={onChange}className={`h-10 border mt-1 rounded px-4 w-full bg-gray-50 ${clas}`} value={value}  />
+  </div>
 }

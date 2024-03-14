@@ -8,7 +8,7 @@ const ProductsScreen = () => {
     const [data] = useFetch('products');
 
     return (
-        <section className=" bg-slate-100 h-100 w-100 py-24 mx-auto px-6">
+        <section className=" bg-gray-100  h-full w-full py-24 mx-auto px-6">
             {/* heading  */}
             <Heading title="Products" />
             {/* products  */}
