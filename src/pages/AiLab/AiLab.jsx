@@ -10,7 +10,7 @@ export default function AiLab() {
   const [BMI, setBMI] = useState("");
   const [DiabetesPedigreeFunction, setDiabetesPedigreeFunction] = useState("");
   const [Age, setAge] = useState("");
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState({result:null,success:false});
 
   const handleSubmit = () => {
     const data = {
@@ -25,14 +25,18 @@ export default function AiLab() {
 
     axios.post('https://model-api-dbuz.onrender.com/diabetes_prediction', data)
       .then(response => {
-        setResult(response.data[0]);
+        setResult({result:response.data[0],success:true});
 
       })
       .catch(error => {
         console.error('Error submitting form:', error);
-        setResult("Error while submitting form")
+        setResult({result:"Error : while submitting form"})
       });
   };
+
+  const handlePopup=()=>{
+    setResult({result:null,success:false})
+  }
 
   return (
     <>
@@ -133,8 +137,8 @@ export default function AiLab() {
         </div>
       </div>
 
-      {result && (
-        <Popup result={result} onClick={()=>setResult(null)}/>
+      {result.result  && (
+        <Popup result={result.result} success={result.success}onClick={handlePopup}/>
 
       )}
 

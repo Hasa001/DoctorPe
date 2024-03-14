@@ -41,12 +41,12 @@ export const HomePage = () => {
             <h2>Consult top doctors online for any health concern</h2>
             <p>Private online consultations with verified doctors in all spedialties</p>
             <div className="home-consult-card-container">
-                <ConsultCard title="Period doubts or Pregnancy" image={'../../images/home_irregular_painful_period.webp'} />
-                <ConsultCard title="Acne, pimple or skin issues" image={'../../images/home_acne.webp'} />
-                <ConsultCard title="Performance issues in bed" image={'../../images/home_performance_issues.svg'} />
-                <ConsultCard title="Cold, cough or fever" image={'../../images/home_coughing.webp'} />
-                <ConsultCard title="Child not feeling well" image={'../../images/home_pediatric.svg'} />
-                <ConsultCard title="Depression or anxiety" image={'../../images/home-mental-wellness.webp'} />
+                <ConsultCard title="Period doubts or Pregnancy" image={'images/period.svg'} link={"/searchDoctor"}/>
+                <ConsultCard title="Acne, pimple or skin issues" image={'images/acne.jpg'} link={"/searchDoctor"}/>
+                <ConsultCard title="Headache, joint pain" image={'images/pain.svg'} link={"/searchDoctor"}/>
+                <ConsultCard title="Cold, cough or fever" image={'images/fever.svg'} link={"/searchDoctor"} />
+                <ConsultCard title="Child not feeling well" image={'images/childnotwell.svg'} link={"/searchDoctor"}/>
+                <ConsultCard title="Depression or anxiety" image={'images/depression.svg'} link={"/searchDoctor"}/>
 
             </div>
         </section>

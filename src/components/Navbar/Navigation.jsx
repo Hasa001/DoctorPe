@@ -17,7 +17,7 @@ export const Navigation = () => {
                 <Link to="/">
                 <div className="div-nav-middle-item">
                     <div>Home</div>
-                    <div>DoctorPe</div>
+                    <div>Doctorपे</div>
                 </div>
                 </Link>
 
@@ -36,13 +36,13 @@ export const Navigation = () => {
                 <Link to="/medicines">
                     <div className="div-nav-middle-item">
                         <div>Medicines</div>
-                        <div>Practo Pharmacy</div>
+                        <div>Doctorपे Pharmacy</div>
                     </div>
                 </Link>
                 <Link to="/Ai_Lab">
                     <div className="div-nav-middle-item">
-                        <div>Lab Tests</div>
-                        <div>Book tests & checkup</div>
+                        <div>AI Lab</div>
+                        <div>Artificial Lab Test</div>
                     </div>
                 </Link>
             </div>

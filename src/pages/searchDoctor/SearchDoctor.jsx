@@ -3,6 +3,7 @@ import DoctorCard from "../../components/Card/DoctorCard"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import {call} from '../../components/VideoCall/creatingCall.js'
+import Heading from '../../components/products/Heading.jsx';
 export const SearchDoctor = () => {
     const navigate = useNavigate()
     const [users, setUsers] = useState([])
@@ -22,27 +23,26 @@ export const SearchDoctor = () => {
         navigate("/consult")
     }
 
-    return <div className="bg-gray-100  w-full h-full  p-10">
+    return <div className="bg-gray-100  h-full w-full py-24 mx-auto px-6 ">
         <div className="">
-            
-            {/* flex justify-around */}
-            <div className="flex  justify-around w-100 item-center ">
-                <div className=" bg-white rounded-2xl border   mt-7 hover:py-1 hover:shadow-lg">
-                    <button className="py-4 px-10 text-xs hover:underline hover:bg-gradient-to-r from-blue-500 to-cyan-500 hover:text-white hover:rounded-2xl">ALL</button>
-                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-blue-500 to-cyan-500 hover:text-white hover:rounded-2xl">CARDIOLOGY</button>
-                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-blue-500 to-cyan-500 hover:text-white hover:rounded-2xl">ORTHOPEDICS</button>
-                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-blue-500 to-cyan-500 hover:text-white hover:rounded-2xl">CONCOLOGY</button>
-                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-blue-500 to-cyan-500 hover:text-white hover:rounded-2xl">DERMETOLOGY</button>
-                    <button className="py-4 px-10 text-xs hover:underline hover:bg-gradient-to-r from-blue-500 to-cyan-500 hover:text-white hover:rounded-2xl">SURGORY</button>
-                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-blue-500 to-cyan-500 hover:text-white hover:rounded-2xl">GYNOCOLOGY</button>
+        <div className="text-2xl font-medium mt-8 font-serif p-10 pl-20">
+                <Heading title="Doctors"/>
+            </div>
+            <div className="flex  justify-around w-100 mb-10 transition duration-200 ease-in hover:scale-105 item-center ">
+                <div className=" bg-white rounded-2xl border   mt-7  hover:shadow-lg">
+                    <button className="py-4 px-10 text-xs hover:underline hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:rounded-2xl">ALL</button>
+                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:rounded-2xl">CARDIOLOGY</button>
+                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:rounded-2xl">ORTHOPEDICS</button>
+                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:rounded-2xl">CONCOLOGY</button>
+                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:rounded-2xl">DERMETOLOGY</button>
+                    <button className="py-4 px-10 text-xs hover:underline hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:rounded-2xl">SURGORY</button>
+                    <button className="py-4 px-8 text-xs hover:underline hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:rounded-2xl">GYNOCOLOGY</button>
                 </div>
             </div>
-            <div className="text-2xl font-medium p-10 pl-20">
-                Doctor
-            </div>
+            
         </div>
 
-        <div className="grid grid-cols-5 p-2">
+        <div className="grid  grid-cols-5 ">
         
             
         {users.map(user => (
