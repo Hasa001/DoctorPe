@@ -12,7 +12,7 @@ export default function AiLab() {
   const [Age, setAge] = useState("");
   const [result, setResult] = useState({result:null,success:false});
 
-  const handleSubmit = () => {
+  const handleSubmit = async() => {
     const data = {
       Glucose,
       BloodPressure,
@@ -23,7 +23,7 @@ export default function AiLab() {
       Age
     };
 
-    axios.post('https://model-api-dbuz.onrender.com/diabetes_prediction', data)
+    await axios.post('https://model-api-dbuz.onrender.com/diabetes_prediction', data)
       .then(response => {
         setResult({result:response.data[0],success:true});
 
@@ -62,7 +62,7 @@ export default function AiLab() {
                         name="Glucose"
                         id="GlBcose"
                         clasBNSme="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                S   />
+                      />
                     </div>
                     <div className="md:col-span-1">
                       <InputBox
