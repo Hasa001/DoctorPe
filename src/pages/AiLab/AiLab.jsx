@@ -40,19 +40,19 @@ export default function AiLab() {
 
   return (
     <>
-      <div className="min-h-screen p-3 bg-gray-100 flex items-center justify-center">
+      <div className="min-h-screen p-3 bg-gray-200 flex items-center justify-center ">
         <div className="container max-w-screen-lg  mx-auto">
-          <div>
+          <div >
             <h2 className="font-semibold text-xl text-gray-600">Diabetes Prediction Form</h2>
             <br />
 
-            <div className="bg-white rounded shadow-lg p-3 px-4 md:p-8 mb-6">
+            <div className="bg-white rounded shadow-xl p-3 px-4 md:p-8 mb-6">
               <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-1">
                 <div className="text-gray-600">
                   <p className="font-medium text-lg">Details</p><br />
                 </div>
 
-                <div className="lg:col-span-2">
+                <div className="lg:col-span-2 ">
                   <div className="grid gap-4 gap-y-2 text-sm grid-cols-2 md:grid-cols-2">
                     <div className="md:col-span-1">
                       <InputBox
@@ -61,7 +61,7 @@ export default function AiLab() {
                         type="text"
                         name="Glucose"
                         id="GlBcose"
-                        clasBNSme="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                       />
                     </div>
                     <div className="md:col-span-1">
@@ -129,7 +129,7 @@ export default function AiLab() {
               </div>
               <div className="md:col-span-2 text-right">
                 <div className="inline-flex items-end">
-                  <button onClick={handleSubmit} className="bg-cyan-500 hover:bg-[#10f9f9] text-white font-bold py-2 px-4 rounded">Submit</button>
+                  <button onClick={handleSubmit} className="bg-cyan-500  hover:bg-[#10f9f9] text-white font-bold py-2 px-4 rounded">Submit</button>
                 </div>
               </div>
             </div>

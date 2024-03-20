@@ -6,6 +6,8 @@ import { ConsultCard } from '../../components/Home/ConsultCard'
 import { FacilityCard } from '../../components/Home/FacilityCard'
 import { FindDoctorSearch } from '../../components/Home/FindDoctorSearch'
 import { useNavigate } from "react-router-dom"
+
+
 export const HomePage = () => {
 
         const navigate = useNavigate()
@@ -25,7 +27,7 @@ export const HomePage = () => {
                 <Button className="btn-knowmore text-white border rounded-2xl hover:underline">Know more</Button>
             </div>
             <div className="home-banner-right">
-                <img src={'../../images/banner.webp'} alt="banner" />
+                <img src={'images/banner.webp'} alt="banner" />
             </div>
         </section>
         <section className="home-facilities">

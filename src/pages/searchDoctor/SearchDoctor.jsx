@@ -4,6 +4,8 @@ import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import {call} from '../../components/VideoCall/creatingCall.js'
 import Heading from '../../components/products/Heading.jsx';
+import {send} from './mail.js'
+
 export const SearchDoctor = () => {
     const navigate = useNavigate()
     const [users, setUsers] = useState([])
@@ -20,10 +22,11 @@ export const SearchDoctor = () => {
 
     const handleOnClick = () => {
         call.join({ create: true });
+        send();
         navigate("/consult")
     }
 
-    return <div className="bg-gray-100  h-full w-full py-24 mx-auto px-6 ">
+    return <div className="bg-gray-200  h-full w-full pt-10 mx-auto px-6 " >
         <div className="">
         <div className="text-2xl font-medium mt-8 font-serif p-10 pl-20">
                 <Heading title="Doctors"/>
